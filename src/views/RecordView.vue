@@ -9,7 +9,7 @@
 import CheckIn from "@/components/CheckIn.vue";
 
 export default {
-	name: "CheckIn",
+	name: "RecordView",
 	components: {
 		CheckIn,
 	},
