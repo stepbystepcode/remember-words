@@ -114,124 +114,21 @@
 				</div>
 				<!---->
 			</header>
-			<form action="https://www.codingboy.xyz/insert2.php" method="post">
+			<form action="https://www.codingboy.xyz/insert2.php" method="post" enctype="multipart/form-data">
 				<div class="content list-content">
-					<div class="record-border color-divider color-bg-content">
-						<label
-							for="f_442d48f6-a97c-4ff0-905a-d232cbf1ff2a"
-							class="q-field row no-wrap items-start record-text color-bg-content color-text q-textarea q-textarea--autogrow q-field--borderless q-validation-component"
-							style="margin: 12px 32px 24px; font-size: 15px"
-							><div class="q-field__inner relative-position col self-stretch">
-								<div tabindex="-1" class="q-field__control relative-position row no-wrap">
-									<div
-										class="q-field__control-container col relative-position row no-wrap q-anchor--skip"
-										style=""
-									>
-										<textarea
-											v-model="form.content"
-											name="content"
-											tabindex="0"
-											rows="1"
-											id="f_442d48f6-a97c-4ff0-905a-d232cbf1ff2a"
-											type="text"
-											class="q-field__native q-placeholder"
-											style="height: 52px"
-										></textarea>
-									</div>
-								</div></div
-						></label>
-					</div>
-					<div class="record-border color-divider color-bg-content" style="margin-top:20px">
-						<label
-							for="f_442d48f6-a97c-4ff0-905a-d232cbf1ff2a"
-							class="q-field row no-wrap items-start record-text2 color-bg-content color-text q-textarea q-textarea--autogrow q-field--borderless q-validation-component"
-							style="margin: 12px 32px 24px; font-size: 15px"
-							><div class="q-field__inner relative-position col self-stretch">
-								<div tabindex="-1" class="q-field__control relative-position row no-wrap">
-									<div
-										class="q-field__control-container col relative-position row no-wrap q-anchor--skip"
-										style=""
-									>
-										<input
-											class="q-field__native q-placeholder"
-											style="height: 22px !important"
-											type="text"
-											name="img"
-										>
-									</div>
-								</div></div
-						></label>
-					</div>
-					<div
-						class="row justify-between q-mt-md q-mb-lg items-center"
-						style="margin-bottom: 280px"
-					>
-						<div class="row items-center">
-							<div class="num-font color-desc q-mr-md">{{ form.content.length }} 字</div>
-							<hr
-								role="separator"
-								aria-orientation="vertical"
-								class="q-separator q-separator q-separator--vertical q-separator--vertical-inset"
-							/>
-							<button
-								tabindex="0"
-								type="button"
-								role="button"
-								class="q-btn q-btn-item non-selectable no-outline color-desc q-btn--flat q-btn--rectangle q-btn--actionable q-focusable q-hoverable q-btn--no-uppercase q-btn--wrap"
-							>
-								<span class="q-focus-helper"></span
-								><span class="q-btn__wrapper col row q-anchor--skip"
-									><span
-										class="q-btn__content text-center items-center q-anchor--skip justify-center row"
-									>
-										Redmi 10X
-									</span></span
-								>
-							</button>
-							<hr
-								role="separator"
-								aria-orientation="vertical"
-								class="q-separator q-separator q-separator--vertical q-separator--vertical-inset"
-							/>
-							<label
-								for="f_bfc5fa38-9d4a-460e-b0bb-28772e95c372"
-								class="q-field row no-wrap items-start q-select q-field--auto-height q-select--without-input q-select--without-chips q-select--single q-field--borderless q-field--float q-field--dense q-validation-component"
-								style="padding-left: 20px"
-								><div class="q-field__inner relative-position col self-stretch">
-									<div tabindex="-1" class="q-field__control relative-position row no-wrap">
-										<div
-											class="q-field__control-container col relative-position row no-wrap q-anchor--skip"
-										>
-											<div class="q-field__native row items-center">
-												<select
-													name="weather"
-													class="form-control info-select"
-													@click="select('blur')"
-													@change="select('focus')"
-												>
-													<option value="晴" selected>晴</option>
-													<option value="多云">多云</option>
-													<option value="阴">阴</option>
-													<option value="雨">雨</option>
-													<option value="雷阵雨">雷阵雨</option>
-													<option value="雪">雪</option>
-													<option value="大风">大风</option>
-													<option value="大雾">大雾</option>
-													<option value="冰雹">冰雹</option>
-													<option value="雾霾">雾霾</option>
-													<option value="沙尘暴">沙尘暴</option>
-													<option value="日出">日出</option>
-													<option value="日落">日落</option>
-													<option value="深夜">深夜</option>
-												</select>
-												<span class="select">◢</span>
-											</div>
-										</div>
-									</div>
-								</div></label
-							>
-						</div>
-					</div>
+					<select name="person" required>
+						<option value="一步一个脚印">一步一个脚印</option>
+						<option value="CE">CE</option>
+						<option value="iw">iw.</option>
+						<option value="sakura">sakura</option>
+						<option value="lmd">lmd</option>
+						<option value="yqy">yqy</option>
+						<option value="XYZ">X.Y.Z.</option>
+						<option value="lhq">lhq</option>
+						<option value="Luvol">Luvol.</option>
+
+					</select><br>
+					<input type="file" name="file">
 				</div>
 				<input type="text" name="time" style="visibility: hidden" v-model="form.time" />
 			</form>

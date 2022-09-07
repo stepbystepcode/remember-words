@@ -99,7 +99,7 @@
 							<div
 								class="list-content-text q-mt-md color-text"
 								style="word-break: break-all; overflow-wrap: break-word"
-								v-html="article.content"
+								v-html="article.person"
 							></div>
 							<div class="row items-center q-mt-md justify-start">
 								<div v-if="imgList[index] != ''">
@@ -109,8 +109,8 @@
 										:onInit="onInit"
 										:onBeforeSlide="onBeforeSlide"
 									>
-										<a v-for="(img, i) in imgList[index]" :key="i" :href="img">
-											<img class="list-image q-mr-sm" alt="img1" :src="img" />
+										<a v-for="(img, i) in imgList[index]" :key="i" :href="`https://www.codingboy.xyz/upload/${img}`">
+											<img class="list-image q-mr-sm" alt="img1" :src="`https://www.codingboy.xyz/upload/${img}`" />
 										</a>
 									</lightgallery>
 								</div>
