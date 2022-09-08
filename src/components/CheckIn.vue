@@ -3305,12 +3305,6 @@ body.q-ios-padding .q-dialog__inner > div {
   outline: 0 !important;
 }
 
-.q-field__input:-webkit-autofill,
-.q-field__native:-webkit-autofill {
-  -webkit-animation-name: q-autofill;
-  -webkit-animation-fill-mode: both;
-}
-
 .q-field__input:-webkit-autofill + .q-field__label,
 .q-field__native:-webkit-autofill + .q-field__label {
   transform: translateY(-40%) scale(0.75);
@@ -13399,7 +13393,6 @@ body.q-ios-padding .q-notifications__list--center {
 }
 
 body.electron .q-electron-drag {
-  -webkit-user-select: none;
   -webkit-app-region: drag;
 }
 
@@ -14096,7 +14089,6 @@ img.responsive {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  user-drag: none;
   -khtml-user-drag: none;
   -webkit-user-drag: none;
 }
@@ -14304,7 +14296,6 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-smoothing: antialiased;
   line-height: 1.5;
   font-size: 14px;
 }
