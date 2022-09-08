@@ -9,9 +9,11 @@
   },
   "dependencies": {
     "axios": "^0.27.2",
+    "bootstrap-select": "^1.13.18",
     "core-js": "^3.8.3",
     "element-plus": "^2.2.2",
     "lightgallery": "^2.4.0",
+    "sweetalert": "^2.1.2",
     "vue": "^3.2.13",
     "vue-axios": "^3.4.1",
     "vue-router": "^4.0.3"
